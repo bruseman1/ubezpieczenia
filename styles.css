@@ -1,6 +1,6 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin: 0;
     padding: 0;
     color: #333;
@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color:#602610ca;
     color: white;
     padding: 20px;
     display: flex;
@@ -46,9 +46,53 @@ nav a:hover {
 }
 
 .hero {
-    background-color: #FFEDD5; /* Light pumpkin */
-    padding: 50px;
-    text-align: center;
+    background-image: url('utils/cover_p1.jpg'); /* Tło dla sekcji hero */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: right;
+    padding: 2vh 2vh;
+    height: 30vh; /* Pełna wysokość ekranu */
+}
+
+/* Styl dla sekcji Services */
+.services {
+    background-image: url('utils/cover_p2.jpg'); /* Tło dla sekcji services */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #333; /* Ciemniejszy kolor tekstu */
+    text-align: right;
+    padding: 50px 20px;
+    height: 30vh;
+}
+
+/* Styl dla sekcji About */
+.about {
+    background-image: url('utils/cover_p3.jpg'); /* Tło dla sekcji about */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: left;
+    padding: 50px 20px;
+    height: 30vh;
+}
+
+/* Styl dla przycisków */
+.cta-button {
+    background-color:#333;
+    color:#f9f9f9;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.cta-button:hover {
+    background-color: #b23609ca;
 }
 
 .hero h1 {
@@ -60,11 +104,6 @@ nav a:hover {
     font-size: 18px;
 }
 
-section {
-    padding: 40px;
-    margin: 20px;
-    border-radius: 8px;
-}
 
 #about {
     background-color: #fff;
