@@ -132,7 +132,17 @@ nav a:hover {
     height: 30vh;
 }
 .service-disability-insurance {
-    background-image: url('utils/cover_p3.jpg'); /* Tło dla sekcji ubezpieczenie na wypadek śmierci */
+    background-image: url('utils/cover_p3.jpg'); /* Tło dla sekcji ubezpieczenie na utratę sprawności */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: left;
+    padding: 50px 20px;
+    height: 30vh;
+}
+.service-serious-diseases-insurance {
+    background-image: url('utils/cover_p3.jpg'); /* Tło dla sekcji ubezpieczenie na wypadek diagnozy chorób ciężkich */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
