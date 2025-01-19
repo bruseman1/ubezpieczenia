@@ -121,6 +121,16 @@ nav a:hover {
     border-radius: 5px;
     display: inline-block;
 }
+.service-death-insurance{
+    background-image: url('utils/cover_p3.jpg'); /* Tło dla sekcji ubezpieczenie na wypadek śmierci */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: left;
+    padding: 50px 20px;
+    height: 30vh;
+}
 
 #testimonials {
     background-color: #fff;
