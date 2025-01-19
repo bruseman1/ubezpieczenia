@@ -130,7 +130,7 @@ nav a:hover {
     color: white;
     text-align: left;
     padding: 50px 20px;
-    height: 30vh;
+    min-height: 30vh;
 }
 .service-disability-insurance {
     /*background-image: url('utils/cover_p3.jpg');*/ /* Tło dla sekcji ubezpieczenie na utratę sprawności */
@@ -141,7 +141,7 @@ nav a:hover {
     color: white;
     text-align: left;
     padding: 50px 20px;
-    height: 30vh;
+    min-height: 30vh;
 }
 .service-serious-diseases-insurance {
     /*background-image: url('utils/cover_p3.jpg');*/ /* Tło dla sekcji ubezpieczenie na wypadek diagnozy chorób ciężkich */
@@ -152,7 +152,7 @@ nav a:hover {
     color: white;
     text-align: left;
     padding: 50px 20px;
-    height: 30vh;
+    min-height: 30vh;
 }
 
 #testimonials {
