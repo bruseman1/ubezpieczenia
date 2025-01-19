@@ -122,7 +122,8 @@ nav a:hover {
     display: inline-block;
 }
 .service-death-insurance {
-    background-image: url('utils/cover_p3.jpg'); /* Tło dla sekcji ubezpieczenie na wypadek śmierci */
+    /*background-image: url('utils/cover_p3.jpg');*/ /* Tło dla sekcji ubezpieczenie na wypadek śmierci */
+    background-color: #b23609ca;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -132,7 +133,8 @@ nav a:hover {
     height: 30vh;
 }
 .service-disability-insurance {
-    background-image: url('utils/cover_p3.jpg'); /* Tło dla sekcji ubezpieczenie na utratę sprawności */
+    /*background-image: url('utils/cover_p3.jpg');*/ /* Tło dla sekcji ubezpieczenie na utratę sprawności */
+    background-color: #b23609ca;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -142,7 +144,8 @@ nav a:hover {
     height: 30vh;
 }
 .service-serious-diseases-insurance {
-    background-image: url('utils/cover_p3.jpg'); /* Tło dla sekcji ubezpieczenie na wypadek diagnozy chorób ciężkich */
+    /*background-image: url('utils/cover_p3.jpg');*/ /* Tło dla sekcji ubezpieczenie na wypadek diagnozy chorób ciężkich */
+    background-color: #b23609ca;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
