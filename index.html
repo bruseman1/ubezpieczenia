@@ -135,5 +135,28 @@
     </footer>
 
     <script src="script.js"></script>
+	div class="phone-button-container">
+    <button id="phone-button">
+        <img src="phone-icon.png" alt="Telefon">
+    </button>
+</div>
+
+<div id="contact-form" class="hidden">
+    <form id="callback-form">
+        <label for="phone">Numer telefonu:</label>
+        <input type="tel" id="phone" name="phone" required>
+        
+        <label for="topic">Wybierz temat rozmowy:</label>
+        <select id="topic" name="topic" required>
+            <option value="">-- Wybierz temat --</option>
+            <option value="ubezpieczenie">Ubezpieczenie</option>
+            <option value="oferta">Oferta</option>
+            <option value="inne">Inne</option>
+        </select>
+        
+        <button type="submit">Wyślij</button>
+    </form>
+</div>
+
 </body>
 </html>
