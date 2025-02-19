@@ -1,4 +1,39 @@
 /* General Styles */
+
+.phone-button-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+#phone-button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #007bff;
+    border: none;
+    cursor: pointer;
+}
+
+#phone-button img {
+    width: 30px;
+    height: 30px;
+}
+
+#contact-form {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
 body {
     font-family:'Lato', sans-serif;
     margin: 0;
