@@ -21,6 +21,38 @@
     height: 30px;
 }
 
+
+.contact-form-header
+{
+    background-color:#ffffff;
+    height:265px;
+    width:265px;
+    padding:0px;
+    position:absolute;
+}
+.rectangle2
+{
+    background-color:#11174f;
+    height:40px;
+    width:264px;
+    border-radius:8px 8px 0px 0px;
+}
+.header-title
+{
+    color:#ffffff;
+    text-align:left;
+    vertical-align:text-top;
+    font-size:12px;
+    font-family:Inter;
+    line-height:auto;
+    border-style:hidden;
+    outline:none;
+    left:58px;
+    top:13px;
+    position:absolute;
+    width:148px;
+}
+
 #contact-form {
     position: fixed;
     bottom: 80px;
