@@ -142,15 +142,23 @@
 </div>
 
 <div id="contact-form" class="hidden">
-	<div id='contact-form-background' class='contact-form-background'>
-		<div id='header-background' class='header-background'>
-		</div>
-		<div id='header-title' class='header-title'>
-			Zamów rozmowę ze mną!</div>
-
-	<input id='phonenumber' class='phonenumber' type='text' placeholder='Numer telefonu'  />
-	</div>
+    <div class="contact-form-background">
+        <div class="header-background">
+            <span class="header-title">Zamów rozmowę ze mną!</span>
+        </div>
+        <div class="form-content">
+            <input type="tel" class="phonenumber" placeholder="Numer telefonu">
+            <select class="topic-select">
+                <option value="" disabled selected>Temat rozmowy</option>
+                <option value="oferta">Oferta</option>
+                <option value="współpraca">Współpraca</option>
+                <option value="inne">Inne</option>
+            </select>
+            <button class="submit-button">Wyślij</button>
+        </div>
+    </div>
 </div>
+
 
 	
     <script src="script.js"></script>
