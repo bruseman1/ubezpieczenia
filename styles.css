@@ -22,7 +22,7 @@
 }
 
 
-.contact-form-header
+.contact-form-header-text
 {
     background-color:#ffffff;
     height:265px;
@@ -30,7 +30,7 @@
     padding:0px;
     position:absolute;
 }
-.rectangle2
+.contact-form-header-background
 {
     background-color:#11174f;
     height:40px;
