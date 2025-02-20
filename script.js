@@ -8,17 +8,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
 document.addEventListener("DOMContentLoaded", function () {
+    let form = document.getElementById("callback-form");
+    let phoneInput = document.getElementById("phone");
+    let topicSelect = document.getElementById("topic");
+
+    // Sprawdzenie, czy elementy istnieją
+    if (!form || !phoneInput || !topicSelect) {
+        console.error("Błąd: Formularz lub pola wejściowe nie zostały znalezione.");
+        return;
+    }
+
     document.getElementById("phone-button").addEventListener("click", function () {
         document.getElementById("contact-form").classList.toggle("hidden");
     });
 
-    document.getElementById("callback-form").addEventListener("submit", function (event) {
+    form.addEventListener("submit", function (event) {
         event.preventDefault();
 
-        let phone = document.getElementById("phone").value.trim();
-        let topic = document.getElementById("topic").value.trim();
+        let phone = phoneInput.value.trim();
+        let topic = topicSelect.value.trim();
 
         // Walidacja numeru telefonu (min. 9 cyfr, tylko cyfry)
         let phoneRegex = /^[0-9]{9,}$/;
@@ -27,24 +36,21 @@ document.addEventListener("DOMContentLoaded", function () {
             return;
         }
 
-        // Sprawdzenie, czy użytkownik wybrał temat rozmowy
         if (!topic) {
             alert("Proszę wybrać temat rozmowy.");
             return;
         }
 
-        // Przygotowanie danych do wysyłki
         let templateParams = {
             phone: phone,
             topic: topic,
         };
 
-        // Wysyłka e-maila przez EmailJS
-        emailjs.send("service_qettnq8", "template_ujiip6l", templateParams)
+        emailjs.send("service_qettnq8", "template_ujiip6l", templateParams, "TWÓJ_PUBLIC_KEY")
             .then(function (response) {
                 alert("Wiadomość została wysłana! 📩");
-                document.getElementById("contact-form").classList.add("hidden"); // Ukryj formularz po wysyłce
-                document.getElementById("callback-form").reset(); // Wyczyść formularz
+                document.getElementById("contact-form").classList.add("hidden");
+                form.reset();
             }, function (error) {
                 alert("Błąd podczas wysyłania wiadomości: " + error.text);
             });
