@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
         };
 
         // Wysyłka e-maila przez EmailJS
-        emailjs.send("TWÓJ_SERVICE_ID", "TWÓJ_TEMPLATE_ID", templateParams)
+        emailjs.send("service_qettnq8", "template_ujiip6l", templateParams)
             .then(function (response) {
                 alert("Wiadomość została wysłana! 📩");
                 document.getElementById("contact-form").classList.add("hidden"); // Ukryj formularz po wysyłce
