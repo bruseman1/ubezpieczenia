@@ -147,17 +147,20 @@
             <span class="header-title">Zamów rozmowę ze mną!</span>
         </div>
         <div class="form-content">
-            <input type="text" class="phonenumber" placeholder="Numer telefonu"name = "phone" required>
-            <select id="topic" class="topic-select">
-                <option value="" disabled selected>Temat rozmowy</option>
-                <option value="oferta">Oferta</option>
-                <option value="współpraca">Współpraca</option>
-                <option value="inne">Inne</option>
-            </select>
-            <button type="submit" class="submit-button">Wyślij</button>
+            <form id="callback-form">  <!-- Dodałem id="callback-form" -->
+                <input type="text" id="phone" class="phonenumber" placeholder="Numer telefonu" name="phone" required>
+                <select id="topic" class="topic-select">
+                    <option value="" disabled selected>Temat rozmowy</option>
+                    <option value="oferta">Oferta</option>
+                    <option value="współpraca">Współpraca</option>
+                    <option value="inne">Inne</option>
+                </select>
+                <button type="submit" class="submit-button">Wyślij</button>
+            </form>
         </div>
     </div>
 </div>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
