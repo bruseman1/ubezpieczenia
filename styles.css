@@ -61,9 +61,7 @@ width:148px;
 .contact-form-background
 {
     background-color:#ffffff;
-    height:264px;
-    width:264px;
-    padding:20px;
+    height:304px;
     filter:drop-shadow(5px 4px 4px rgba(0,0,0,0.25));
     border-radius:8px;
 }
