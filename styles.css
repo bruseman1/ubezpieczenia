@@ -28,7 +28,16 @@
     background: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
 
+.contact-form-background
+{
+    background-color:#ffffff;
+    height:264px;
+    width:264px;
+    padding:20px;
+    filter:drop-shadow(5px 4px 4px rgba(0,0,0,0.25));
+    border-radius:8px;
 }
 
 .hidden {
