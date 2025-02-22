@@ -11,12 +11,12 @@
         <div class="logo">Agent ubezpieczeniowy</div>
         <nav>
             <ul>
-                <li><a href="about.html">O mnie</a></li>
-                <li><a href="#services">Uslugi</a></li>
+                <li><a href="about.html">W kilku słowach</a></li>
+                <li><a href="#services">Moje usługi</a></li>
                 <li><a href="contact.html">Kontakt</a></li>
             </ul>
         </nav>
-        <button class="cta-button">Oferta</button>
+        <!--<button class="cta-button">Oferta</button>-->
     </header>
 
     <section class="about">
@@ -30,6 +30,7 @@
 
     <section class="service-death-insurance">
     	<h1>Ubezpieczenie na Wypadek Śmierci – Zapewnij Spokój Sobie i Swoim Bliskim</h1>
+		<div class="text-container">
     	<p>Ubezpieczenie na wypadek śmierci to istotna forma zabezpieczenia finansowego, która zapewnia wsparcie Twoim bliskim w razie nieoczekiwanych wydarzeń. Choć życie jest pełne niespodzianek, warto zadbać o to, by w trudnych chwilach Twoja rodzina nie musiała borykać się z dodatkowymi problemami finansowymi.</p>
 
     	<h2>Dlaczego warto rozważyć ubezpieczenie na wypadek śmierci?</h2>
@@ -57,13 +58,15 @@
 
     	<h2>Podsumowanie</h2>
     	<p>Ubezpieczenie na wypadek śmierci to inwestycja w bezpieczeństwo finansowe Twoich bliskich. Choć trudno myśleć o takich trudnych momentach, jak utrata ukochanej osoby, warto mieć pewność, że Twoi bliscy będą pod odpowiednią opieką finansową, gdy już Ciebie zabraknie.</p>
-
-    	<button class="cta-button">Więcej</button>
+		<span class="fade"></span>
+	</div>
+    <button class="cta-button toggleButton">Więcej</button>
     </section>
 
     
     <section class="service-disability-insurance">
     	<h1>Ubezpieczenie na Utratę Sprawności – Wsparcie na Każdy Wypadek</h1>
+		<div class="text-container">
     		<p>Ubezpieczenie na wypadek utraty sprawności to polisa, która zapewnia finansowe wsparcie w sytuacji, gdy niespodziewany wypadek lub choroba uniemożliwią Ci normalne, aktywne życie. Polisa ta ma na celu pomóc Tobie i Twoim bliskim, gdy doświadczysz częściowej lub całkowitej niezdolności do samodzielnego funkcjonowania.</p>
 
     	<h2>Dlaczego warto rozważyć ubezpieczenie na wypadek utraty sprawności?</h2>
@@ -90,12 +93,15 @@
     		</ul>
     	<h2>Podsumowanie</h2>
     		<p>Ubezpieczenie na wypadek utraty sprawności to decyzja, która zapewnia Ci poczucie bezpieczeństwa w obliczu nieprzewidzianych zdarzeń. Dzięki temu wsparciu Ty i Twoi bliscy możecie skupić się na adaptacji do nowych warunków życia, mając pewność, że w razie potrzeby otrzymacie pomoc finansową.</p>
-    		<button class="cta-button">Więcej</button>
+			<span class="fade"></span>
+			</div>	
+    		<button class="cta-button toggleButton">Więcej</button>
     </section>
 
 
     <section class="service-serious-diseases-insurance">
         <h1>Ubezpieczenie na Wypadek Diagnozy Ciężkich Chorób – Zabezpiecz Siebie i Bliskich</h1>
+		<div class="text-container">
         	<p>Ubezpieczenie na wypadek diagnozy ciężkich chorób to polisa, która gwarantuje wsparcie finansowe w sytuacji, gdy zmagasz się z poważną chorobą, taką jak nowotwór, zawał serca czy udar. Diagnoza ciężkiej choroby niesie ze sobą ogromne wyzwania – zarówno emocjonalne, jak i finansowe. Polisa ta ma na celu wesprzeć Cię w pokryciu kosztów leczenia, rehabilitacji oraz innych wydatków związanych z chorobą, abyś mógł skupić się na powrocie do zdrowia.
 	<h2>Dlaczego warto rozważyć ubezpieczenie na wypadek ciężkich chorób?</h2>
 		<ul>
@@ -117,56 +123,14 @@
 		</ul>
 	<h2>Podsumowanie</h2>
 		<p>Ubezpieczenie na wypadek diagnozy ciężkich chorób to inwestycja, która pozwala zabezpieczyć siebie i swoich bliskich przed finansowymi skutkami poważnych problemów zdrowotnych. Mając takie wsparcie, możesz skupić się na walce o zdrowie i powrót do pełni sił, mając pewność, że w razie potrzeby Ty i Twoja rodzina otrzymacie niezbędne wsparcie.</p></p>
-        	<button class="cta-button">Więcej</button>
+		<span class="fade"></span>
+		</div>	
+        	<button class="cta-button toggleButton">Więcej</button>
     </section>
-    
-
-
-    <section id="services">
-        <h2>Moje usługi</h2>
-        <div class="service-card">Ubezpieczenie na Wypadek Śmierci</div>
-        <div class="service-card">Ubezpieczenie na Utratę Sprawności</div>
-        <div class="service-card">Ubezpieczenie na Wypadek Diagnozy Ciężkich Chorób</div>
-    </section>
-
-
     <footer>
         <p>&copy; 2025 Rafal Bruski</p>
     </footer>
 
-
-<div class="phone-button-container">
-    <button id="phone-button">
-        <img src="utils/phone-icon.png" alt="Telefon">
-    </button>
-</div>
-
-<div id="contact-form" class="hidden">
-    <div class="contact-form-background">
-        <div class="header-background">
-            <span class="header-title">Zamów rozmowę ze mną!</span>
-        </div>
-        <div class="form-content">
-            <form id="callback-form"> 
-                <input type="text" id="phone" class="phonenumber" placeholder="Numer telefonu" name="phone" required>
-                <select id="topic" class="topic-select">
-                    <option value="" disabled selected>Temat rozmowy</option>
-                    <option value="oferta">Oferta</option>
-                    <option value="współpraca">Współpraca</option>
-                    <option value="inne">Inne</option>
-                </select>
-                <button type="submit" class="submit-button">Wyślij</button>
-            </form>
-        </div>
-    </div>
-</div>
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-<script>
-    emailjs.init("HWi3HDJsM3f_bsoko");
-</script>
     <script src="script.js"></script>
 </body>
 </html>

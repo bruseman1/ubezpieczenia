@@ -1,101 +1,18 @@
 /* General Styles */
-#callback-form {
-    display: flex;
-    flex-direction: column;
-    gap: 10px; /* Odstęp między polami */
+
+.text-container {
+    max-height: 6em; /* Ograniczenie do około 4-5 linijek */
+    overflow: hidden;
+    position: relative;
+    line-height:1.5em;
+    transition: max-height 0.3s ease;
+}
+.fade {
+    position: absolute;
+    bottom: 0;
     width: 100%;
-}
-
-#callback-form input,
-#callback-form select,
-#callback-form button {
-    width: 100%;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
-    font-size: 16px;
-}
-
-.phone-button-container {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 1000;
-}
-
-#phone-button {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background-color: #007bff;
-    border: none;
-    cursor: pointer;
-}
-
-#phone-button img {
-    width: 30px;
-    height: 30px;
-}
-#contact-form {
-    position: fixed;
-    bottom: 80px;
-    right: 20px;
-    text-align: center;
-    z-index: 1000;
-}
-
-.contact-form-background {
-    background-color: #ffffff;
-    width: 305px;
-    filter: drop-shadow(5px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 8px;
-}
-
-.header-background {
-    background-color: #11174f;
-    height: 40px;
-    border-radius: 8px 8px 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.header-title {
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: bold;
-}
-
-.form-content {
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-.phonenumber, .topic-select {
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
-}
-
-.submit-button {
-    background-color: #11174f;
-    color: white;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.submit-button:hover {
-    background-color: #0d0f2a;
-}
-
-.hidden {
-    display: none;
+    height: 2em;
+    background: linear-gradient(to bottom, rgba(17, 23, 79, 0), #11174f);
 }
 
 body {
@@ -103,7 +20,7 @@ body {
     margin: 0;
     padding: 0;
     color: #333;
-    background-color: #f9f9f9;
+    background-color: #b23609ca;
 }
 
 header {
@@ -144,27 +61,18 @@ nav a:hover {
     border-radius: 5px;
 }
 
-.hero {
-    background-image: url('utils/cover_p1.jpg'); /* Tło dla sekcji hero */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: white;
-    text-align: right;
-    padding: 2vh 2vh;
-    height: 30vh; /* Pełna wysokość ekranu */
-}
 
 /* Styl dla sekcji Services */
 .services {
-    background-image: url('utils/cover_p2.jpg'); /* Tło dla sekcji services */
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     color: #333; /* Ciemniejszy kolor tekstu */
-    text-align: right;
-    padding: 50px 20px;
     height: 30vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Styl dla sekcji About */
@@ -208,54 +116,43 @@ nav a:hover {
     background-color: #fff;
 }
 
-#services {
-    background-color: #FFEDD5; /* Light pumpkin */
-}
 
 .service-card {
-    background-color: #FF8C00; /* Pumpkin */
+    background-color: #11174F; /* Pumpkin */
     color: white;
     padding: 20px;
     margin: 10px;
     border-radius: 5px;
     display: inline-block;
+    text-align: center;
+    width: 33.%;
 }
 .service-death-insurance {
     /*background-image: url('utils/cover_p3.jpg');*/ /* Tło dla sekcji ubezpieczenie na wypadek śmierci */
-    background-color: #b23609ca;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
     text-align: left;
     padding: 50px 20px;
-    min-height: 30vh;
 }
 .service-disability-insurance {
     /*background-image: url('utils/cover_p3.jpg');*/ /* Tło dla sekcji ubezpieczenie na utratę sprawności */
-    background-color: #b23609ca;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
     text-align: left;
     padding: 50px 20px;
-    min-height: 30vh;
 }
 .service-serious-diseases-insurance {
     /*background-image: url('utils/cover_p3.jpg');*/ /* Tło dla sekcji ubezpieczenie na wypadek diagnozy chorób ciężkich */
-    background-color: #b23609ca;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
     text-align: left;
     padding: 50px 20px;
-    min-height: 30vh;
-}
-
-#testimonials {
-    background-color: #fff;
 }
 
 footer {
