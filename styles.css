@@ -28,6 +28,12 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    gap: 10px; /* Odstęp między ikoną a tekstem */
+}
+
+.about li span {
+    font-weight: bold;
+    white-space: nowrap; /* Zapobiega łamaniu się tekstu */
 }
 
 .about a {
@@ -39,6 +45,7 @@
 .about a:hover {
     text-decoration: underline;
 }
+
 
 
 .text-container {
