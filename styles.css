@@ -1,4 +1,45 @@
 /* General Styles */
+/*new
+*/
+.about {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    height: auto;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.about li {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about a {
+    color: #FFD700;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about a:hover {
+    text-decoration: underline;
+}
+
 
 .text-container {
     max-height: 6em; /* Ograniczenie do około 4-5 linijek */
@@ -13,6 +54,13 @@
     width: 100%;
     height: 2em;
     background: linear-gradient(to bottom, rgba(17, 23, 79, 0), #11174f);
+}
+
+.logoImg {
+    width: 100%;
+    height: auto;
+    max-width: 100vw; /* Zapobiega przekroczeniu szerokości ekranu */
+    display: block; /* Usuwa dodatkowe marginesy dla obrazów inline */
 }
 
 body {
