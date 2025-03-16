@@ -219,3 +219,68 @@ footer {
     text-align: center;
     padding: 20px;
 }
+
+.service-medical-insurance {
+    background: linear-gradient(to bottom, #11174F, #0A0F3C); /* Gradient jak w About */
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.service-medical-insurance h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #FFD700;
+}
+
+/* Poprawiona lista */
+.service-medical-insurance ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+.service-medical-insurance li {
+    font-size: 18px;
+    margin: 10px 0;
+    padding: 10px 10px 10px 35px; 
+    background: rgba(255, 255, 255, 0.15); /* Jak w about */
+    border-radius: 10px;
+    backdrop-filter: blur(5px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative; 
+}
+
+.service-medical-insurance li::before {
+    content: "✔";
+    color: #FFD700;
+    font-weight: bold;
+    font-size: 20px;
+    position:absolute;
+    left: 10px;
+}
+
+/* Responsywność */
+@media (max-width: 768px) {
+    .service-medical-insurance {
+        padding: 30px 15px;
+        max-width: 95%;
+    }
+
+    .service-medical-insurance h1 {
+        font-size: 24px;
+    }
+
+    .service-medical-insurance p, 
+    .service-medical-insurance li {
+        font-size: 16px;
+    }
+}
