@@ -267,6 +267,9 @@ footer {
     position:absolute;
     left: 10px;
 }
+.menu-toggle {
+    display: none; /* Ukrywa hamburgera na dużych ekranach */
+}
 
 /* Responsywność */
 @media (max-width: 768px) {
@@ -282,5 +285,35 @@ footer {
     .service-medical-insurance p, 
     .service-medical-insurance li {
         font-size: 16px;
+    }
+    nav {
+        position: absolute;
+        top: 60px; /* Dostosuj do wysokości nagłówka */
+        left: 0;
+        width: 100%;
+        background-color: #11174F;
+        display: none; /* Domyślnie ukryte */
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+
+    .menu-toggle {
+        display: block;
+        background: none;
+        border: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+
+    .nav-active {
+        display: flex; /* Pokazuje menu po kliknięciu */
     }
 }
